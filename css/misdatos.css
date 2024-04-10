@@ -46,6 +46,15 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+button[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    background-color: #af4c4c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .logo {
     height: 40px;
     margin-right: 10px;
