@@ -21,63 +21,73 @@
     <script src="js/script.js"></script>
     <!-- fin de Barra de menú -->
     <h1>Mantenedor de usuarios</h1>
-    <div>
-      <label for="id">ID:</label>
-      <input type="text" id="id" name="id" />
+    <div id="form_mantenedor" class="cls_mantenedor">
+      <div>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" />
+      </div>
+       <div>
+        <label for="tipo-usuario">Tipo de Usuario:</label>
+        <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente" />
+        <label for="cliente">Cliente</label>
+        <input
+          type="checkbox"
+          id="administrador"
+          name="tipo-usuario"
+          value="administrador"
+        />
+        <label for="administrador">Administrador</label>
+      </div>
+
+      <div>
+        <div class="form-group">
+          <label for="rut">RUT :</label>
+          <input
+            type="text"
+            id="rut"
+            name="rut"
+            pattern="\d{1,8}-[\dkK]"
+            title="Ingresa un RUT válido (sin puntos ni guión)."
+            required
+          />
+          <small>Ejemplo: 12345678-9</small>
+        </div>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección de Vivienda:</label><br>
+          <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea><br>         
+        </div>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" id="miCheckbox" name="miCheckbox" />
+            Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5%
+            de descuento en mis compras
+          </label>
+        </div>
+
+      <div>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" />
+        <button type="submit" onclick="generarPassword()">Generar Contraseña</button>
+      </div>
     </div>
 
-    <div>
-      <label for="tipo-usuario">Tipo de Usuario:</label>
-      <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente" />
-      <label for="cliente">Cliente</label>
-      <input
-        type="checkbox"
-        id="administrador"
-        name="tipo-usuario"
-        value="administrador"
-      />
-      <label for="administrador">Administrador</label>
-    </div>
-
-    <div>
-      <label for="rut">RUT:</label>
-      <input type="text" id="rut" name="rut" />
-    </div>
-
-    <div>
-      <label for="nombres">Nombres:</label>
-      <input type="text" id="nombres" name="nombres" />
-    </div>
-
-    <div>
-      <label for="apellidos">Apellidos:</label>
-      <input type="text" id="apellidos" name="apellidos" />
-    </div>
-
-    <div>
-      <label for="correo">Correo:</label>
-      <input type="email" id="correo" name="correo" />
-    </div>
-
-    <div>
-      <label for="direccion">Dirección:</label>
-      <input type="text" id="direccion" name="direccion" />
-    </div>
-
-    <div>
-      <label for="check">Checkbox:</label>
-      <input type="checkbox" id="check" name="checkbox" />
-    </div>
-
-    <div>
-      <label for="contraseña">Contraseña:</label>
-      <input type="password" id="contraseña" name="contraseña" />
-    </div>
-
-    <div class="form-horizontal">
-      <button class="btn">Guardar</button>
-      <button class="btn">Editar</button>
-      <button class="btn">Eliminar</button>
+    <div class="form-group">
+      <button type="submit">Guardar</button>
+      <button type="submit">Nuevo</button>
+      <button type="reset">Eliminar</button>
+      
     </div>
 
     <table>

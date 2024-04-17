@@ -38,19 +38,17 @@ input[type="tel"] {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
     color: #fff;
     border: none;
-    background-color: #af4c4c;
+    background-color: #4c5eaf;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 button[type="reset"] {
-    background-color: #007bff;
     color: #fff;
     border: none;
-    background-color: #af4c4c;
+    background-color: #4c56af;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;

@@ -34,10 +34,17 @@ th {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
     color: #fff;
     border: none;
-    background-color: #af4c4c;
+    background-color: #4c5eaf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="reset"] {
+    color: #fff;
+    border: none;
+    background-color: #4c56af;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -54,4 +61,8 @@ input[type="text"], input[type="email"], input[type="password"], select {
 .logo {
     height: 40px;
     margin-right: 10px;
+}
+
+.cls_mantenedor {
+    margin-left: 70px;
 }
