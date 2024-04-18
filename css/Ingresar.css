@@ -1,14 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
-
 .container {
     /* max-width: 600px; */
     /* width: 100px !important; */
     margin: 100px auto;
-    background-color: #fff;
+        background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -37,7 +36,8 @@ input[type="tel"] {
     border-radius: 5px;
 }
 
-button[type="submit"] {
+
+.boton[type="submit"] {
     color: #fff;
     border: none;
     background-color: #4c5eaf;
@@ -45,7 +45,7 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
-button[type="reset"] {
+.boton[type="reset"] {
     color: #fff;
     border: none;
     background-color: #4c56af;
@@ -58,4 +58,11 @@ button[type="reset"] {
     margin-right: 10px;
   }
 
+  .margen{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
+  h4{
+    margin-top: 10px;
+  }

@@ -37,7 +37,8 @@ input[type="tel"] {
     border-radius: 5px;
 }
 
-button[type="submit"] {
+
+.boton[type="submit"] {
     color: #fff;
     border: none;
     background-color: #4c5eaf;
@@ -45,7 +46,7 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
-button[type="reset"] {
+.boton[type="reset"] {
     color: #fff;
     border: none;
     background-color: #4c56af;
