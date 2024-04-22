@@ -215,3 +215,19 @@ h1 {
 h2{
   text-align: center;
 }
+
+/* Estilo para pagina Index*/
+.boton {
+  color: #fff;
+  border: none;
+  background-color: #4c56af;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para pagina Nosotros*/
+.ordenFuente {
+  text-align: justify;
+  font-size: 20px;
+}
