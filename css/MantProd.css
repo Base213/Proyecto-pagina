@@ -1,0 +1,40 @@
+/*Estilo MantProd*/
+
+  /* Estilos para el formulario */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los botones */
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #ffffff;
+  }
+  
+  /* Estilos para el contenedor de la imagen y el botón */
+  .image-container {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+  }
