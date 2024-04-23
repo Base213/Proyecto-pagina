@@ -22,12 +22,14 @@
     <div id="menu"></div>
     <script src="js/script.js"></script>
     <!-- Fin de Barra de menú -->
-    <br />
-    <div class="container col-sm-12 col-md-8 col-lg-8 col-xl-4">
+    <div class="container col-sm-12 col-md-8 col-lg-8 col-xl-4" style="margin-top: 200px;">
+      <br>
       <h1>Tienda de videojuegos</h1>
-      <h4>Ingrese sus credenciales</h4>
+      <br>
+      <h4>Ingrese sus credenciales: </h4>
       <form action="">
-        <label for="first"> Usuario </label>
+        <br>
+        <label for="first" style="font-weight: bolder;"> Usuario </label>
         <input
           type="text"
           id="first"
@@ -35,8 +37,8 @@
           placeholder="Ingrese su usuario"
           required
         />
-
-        <label for="password"> Contraseña </label>
+        <br>
+        <label for="password" style="font-weight: bolder;"> Contraseña </label>
         <input
           type="password"
           id="password"
@@ -44,7 +46,6 @@
           placeholder="Ingrese su contraseña"
           required
         />
-
         <div class="wrap margen">
           <button class="boton" type="submit" onclick="solve()">Iniciar Sesion</button>
         </div>
