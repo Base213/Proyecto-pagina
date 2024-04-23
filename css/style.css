@@ -31,8 +31,14 @@
 
 /* Estilo Index */
 .precio{
-  color: #000000;
+    
+  color: #0dae10;
   font-size: 30px;
+}
+
+.precio-descuento{
+  color: #0d5bae;
+  font-size:20px;
 }
 
 .index_stock {
@@ -110,26 +116,28 @@
 }
 
 /* Estilo detalle boleta */
-.container1 {
-  float: right;
-  margin-right: 20px; /* Quede el style aqui debido a que no me funcionaba en la css , cualquier cosa me dicen y lo modifico si saben como*/
-}
-
-.container1 td {
-  padding: 10px; 
-}
-
-.container1 img {
-  width: 40px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.container1 tr td {
+.status {
   text-align: center;
-  vertical-align: middle;
 }
+
+.status img {
+  width: 50px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  margin-bottom: 10px !important;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  margin-right: 20px;
+}
+
+.status span {
+  margin-right: 10px; /* Ajusta el valor según la separación deseada */
+}
+
+
 
 /* Estilos para ADMINBODEGA */
 body {
@@ -224,4 +232,15 @@ a:hover {
 
 .h2API {
   text-align: center;
+}
+
+/* Estilo para FICHA PROD*/
+.tarjeta {
+  width: 110%; /* Ancho de la tarjeta */
+  margin: 0 auto; /* Centrar la tarjeta horizontalmente */
+  
+}
+
+.titulo{
+  font-size: 60px;
 }

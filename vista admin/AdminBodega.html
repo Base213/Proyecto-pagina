@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="Venta de videojuegos">
+  <meta name="Description" content="Administrar bodega">
   <link rel="icon" href="/img/icono juego.png">
   <title>Games Shop</title>
   <link rel="stylesheet" href="/css/style.css">
@@ -79,20 +79,20 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
       <input type="number" id="cantidad" min="0" step="1">
     </div>
     <div class="button-group" style="width : 600px;" >
-      <button type="button" id="nuevo">Nuevo</button>
-      <button type="button" id="agregar">Agregar</button>
+      <button type="button" class="boton" id="nuevo">Nuevo</button>
+      <button type="button" class="boton" id="agregar">Agregar</button>
     </div>
   </form>
 
   <!-- Tabla de productos -->
-  <table>
+  <table CLASS="table table-bordered mt-3">
     <thead>
       <tr>
-        <th>Número de ID</th>
-        <th>Categoría</th>
-        <th>Nombre</th>
-        <th>Estado</th>
-        <th>Opciones</th>
+        <th scope="col">Número de ID</th>
+        <th scope="col">Categoría</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Opciones</th>
       </tr>
     </thead>
     <tbody>
