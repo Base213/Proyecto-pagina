@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+  background-color: #ccc; /* Cambiamos el color de fondo a gris */
+  color: #212529; /* Color del texto principal */
+}
+
+.container {
+  max-width: 800px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido en la página */
+  background-color: #fff; /* Color de fondo del contenedor */
+  padding: 20px; /* Agregamos un espacio de relleno para separar el contenido del borde */
+  border-radius: 10px; /* Añadimos bordes redondeados al contenedor */
+}
+
+h1 {
+  color: #343a40; /* Color del título principal */
+  text-align: center; /* Centrar el título */
+}
+
+/* Estilos para la tabla */
+.table {
+  background-color: #ffffff !important; /* Color de fondo de la tabla (blanco) */
+}
+
+.table th {
+  background-color: #343a40; /* Color de fondo de las celdas de encabezado */
+  color: #000000; /* Color del texto en las celdas de encabezado */
+}
+
+.table td {
+  background-color: #ffffff !important; /* Color de fondo de las celdas de datos (blanco) */
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #007bff; /* Color de los enlaces */
+}
+
+a:hover {
+  color: #0056b3; /* Color al pasar el cursor sobre los enlaces */
+}
+
+/* Estilos para el botón de búsqueda */
+.btn-outline-success {
+  color: #28a745; /* Color del texto del botón de búsqueda */
+  border-color: #28a745; /* Color del borde del botón de búsqueda */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Color de fondo al pasar el cursor sobre el botón de búsqueda */
+  color: #ffffff; /* Color del texto al pasar el cursor sobre el botón de búsqueda */
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.margen{
+  margin-bottom: 10px;
+}
