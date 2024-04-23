@@ -1,43 +1,68 @@
 body {
-    margin: 0;
-    padding: 20x;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px; /* Ajusta el ancho del contenedor según tu diseño */
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Establece una posición relativa para el contenedor */
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton[type="submit"],
+.boton[type="reset"] {
+  color: #fff;
+  border: none;
+  background-color: #4c5eaf;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Hace que los botones ocupen todo el ancho */
+  margin-top: 10px; /* Espacio superior entre los botones */
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+#foto {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  #foto {
+      position: static;
+      margin-top: 20px;
   }
-  
-  .logo {
-    margin-right: 8px;
-  }
-  
-  #datos,
-  #foto,
-  #botones {
-    border: 4px solid rgb(255, 255, 255);
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="file"],
-  textarea {
-    border-width: 3px !important;
-  }
-  
-  .producto {
-    width: 100%;
-  }
-  
-  a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-  
-    text-decoration: none;
-    color: initial;
-  }
-  
-  #emailR {
-      align-items: center;
-  }
-  .logo {
-    height: 40px;
-    margin-right: 10px;
-  }
+}
