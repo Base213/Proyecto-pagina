@@ -4,11 +4,12 @@ body {
     align-items: left;
     padding-bottom: 30px;
     background-color: #f4f4f4;
+    font-size: 16px; /* Tamaño de fuente base */
 }
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     margin-top: 20px;
 }
 
@@ -30,35 +31,32 @@ th {
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    
 }
 
-.boton[type="submit"] {
+.boton[type="submit"],
+.boton[type="reset"] {
     color: #fff;
     border: none;
     background-color: #4c5eaf;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-.boton[type="reset"] {
-    color: #fff;
-    border: none;
-    background-color: #4c56af;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="text"], input[type="email"], input[type="password"], select {
-    width: 20%;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 30%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 8px 0;
     box-sizing: border-box;
 }
+
 .logo {
     height: 40px;
     margin-right: 10px;
@@ -66,4 +64,17 @@ input[type="text"], input[type="email"], input[type="password"], select {
 
 .cls_mantenedor {
     margin-left: 70px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }

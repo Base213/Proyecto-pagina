@@ -60,86 +60,84 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 </body>
 <br>
 <!-- Fin de Barra de menú -->
-    <br>
-    <h1 style="margin-left: 40px; margin-bottom: 30px">Mantenedor de usuarios</h1>
-    <div id="form_mantenedor" class="cls_mantenedor">
-      <div>
-        <br>
-        <label for="id">ID:</label>
-        <br>
-        <input style="width : 600px;" class="margen" type="text" id="id" name="id" />
+
+<div class="container">
+  <h1>Actualizar mis datos</h1>
+  <h4 style="margin-top: 20px;">Mantenedor de Usuarios: </h4>
+  <br>
+  <div class="row"> <!-- Fila de Bootstrap -->
+      <div class="col-md-6"> <!-- Columna para el formulario -->
+          <form>
+            <div>
+              <label for="tipo-usuario">Tipo de Usuario:</label>
+              <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente" />
+              <label for="cliente" style="margin-right: 10px;">Cliente</label>
+              <input 
+                type="checkbox"
+                id="administrador"
+                name="tipo-usuario"
+                value="administrador"
+              />
+              <label for="administrador">Administrador</label>
+            </div>
+              <div class="form-group">
+                  <label for="rut">RUT :</label>
+                  <input
+                    type="text"
+                    id="rut"
+                    name="rut"
+                    pattern="\d{1,8}-[\dkK]"
+                    title="Ingresa un RUT válido (sin puntos ni guión)."
+                    required
+                  />
+                  <small>Ejemplo: 12345678-9</small>
+              </div>
+
+              <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required />
+              </div>
+
+              <div class="form-group">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" id="apellido" name="apellido" required />
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                  <label for="direccion">Dirección de Vivienda:</label><br>
+                  <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea><br>         
+              </div>
+
+              <div class="form-group">
+                  <label>
+                      <input type="checkbox" id="miCheckbox" name="miCheckbox" />
+                      Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5%
+                      de descuento en mis compras
+                  </label>
+              </div>
+
+              <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" />
+                <button type="submit" onclick="generarPassword()" class="boton" style="margin-left: 10px;">Generar Contraseña</button>
+              </div>
+
+          </form>
       </div>
-      <br>
-       <div>
-        <label for="tipo-usuario">Tipo de Usuario:</label>
-        <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente" />
-        <label for="cliente" style="margin-right: 10px;">Cliente</label>
-        <input 
-          type="checkbox"
-          id="administrador"
-          name="tipo-usuario"
-          value="administrador"
-        />
-        <label for="administrador">Administrador</label>
+      <div class="col-md-6"> <!-- Columna para la foto de perfil -->
+          <!--Foto de perfil-->
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+              <div style="width: 200px; height: 200px; background-color: lightgray; margin-bottom: 10px;"></div>
+              <button class="boton" type="submit">Examinar</button>
+          </div>
       </div>
-      <br>
-      <div>
-        <div class="form-group">
-          <br>
-          <label for="rut">RUT :</label>
-          <br>
-          <input style="width : 600px;" class="margen"
-            type="text"
-            id="rut"
-            name="rut"
-            pattern="\d{1,8}-[\dkK]"
-            title="Ingresa un RUT válido (sin puntos ni guión)."
-            required
-          />
-          <small>Ejemplo: 12345678-9</small>
-        </div>
-        <br>
-        <div class="form-group">
-          <br>
-          <label for="nombre">Nombre:</label>
-          <br>
-          <input style="width : 600px;" class="margen" type="text" id="nombre" name="nombre" required />
-        </div>
-        <br>
-        <div class="form-group">
-          <br>
-          <label for="apellido">Apellido:</label>
-          <br>
-          <input style="width : 600px;" class="margen" type="text" id="apellido" name="apellido" required />
-        </div>
-        <br>
-        <div class="form-group">
-          <br>
-          <label for="email">Correo electrónico:</label>
-          <br>
-          <input style="width : 600px;" class="margen" type="email" id="email" name="email" required />
-        </div>
-        <br>
-        <div class="form-group">
-          <label for="direccion">Dirección de Vivienda:</label><br>
-          <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea><br>         
-        </div>
-        <br>
-        <div class="form-group">
-          <label>
-            <input type="checkbox" id="miCheckbox" name="miCheckbox" />
-            Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5%
-            de descuento en mis compras
-          </label>
-        </div>
-        <br>
-      <div>
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" />
-        <button type="submit" onclick="generarPassword()" class="boton" style="margin-left: 10px;">Generar Contraseña</button>
-      </div>
-      <br>
-    </div>
+  </div>
+</div>
     <br>
     <div class="form-group">
       <button type="submit" class="boton">Guardar</button>
@@ -147,7 +145,6 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
       <button type="reset" class="boton">Eliminar</button>
       
     </div>
-    <br>
     <table>
       <tr>
         <th>ID</th>
@@ -158,7 +155,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
         <th>Correo</th>
         <th>Dirección</th>
         <th>Con subscripcion</th>
-        <th>imagen</th>
+        <th>Imagen</th>
       </tr>
       <tr>
         <td>1</td>
