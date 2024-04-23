@@ -59,30 +59,42 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
     
 <div class="container mt-5">
   <h1>Mantenedor de Bodega</h1>
-  
-   <!-- Formulario para agregar productos -->
-   <form>
-    <div class="form-group" style="width : 600px;" >
-      <label for="categoria">Categoría</label>
-      <select id="categoria">
-        <option value="accion">Acción</option>
-        <option value="aventura">Aventura</option>
-        <option value="estrategia">Estrategia</option>
-      </select>
+
+  <!-- Formulario para agregar productos -->
+<form style="display: flex; justify-content: space-between;">
+    <div style="width: calc(50% - 20px);">
+        <div class="form-group" style="width: 600px;">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" class="form-group">
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="estrategia">Estrategia</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 600px;">
+            <label for="nombre">Nombre</label>
+            <select id="nombre" class="form-group">
+                <option value="nombre">The Legend of Zelda: Breath of the Wild</option>
+                <option value="nombre">DIablo IV</option>
+                <option value="nombre">Grand Theft Auto V</option>
+            </select>
+        </div>
+        <div class="form-group" style="width: 600px;">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" class="form-group" min="0" step="1">
+        </div>
+        <div class="button-group" style="width: 600px;">
+            <button type="button" class="boton" id="nuevo">Nuevo</button>
+            <button type="button" class="boton" id="agregar">Agregar</button>
+        </div>
     </div>
-    <div class="form-group" style="width : 600px;" >
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre">
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 200px; height: 200px; background-color: lightgray; margin-bottom: 10px;"></div>
+        <button type="button" class="boton">Examinar</button>
     </div>
-    <div class="form-group" style="width : 600px;" >
-      <label for="cantidad">Cantidad</label>
-      <input type="number" id="cantidad" min="0" step="1">
-    </div>
-    <div class="button-group" style="width : 600px;" >
-      <button type="button" class="boton" id="nuevo">Nuevo</button>
-      <button type="button" class="boton" id="agregar">Agregar</button>
-    </div>
-  </form>
+</form>
+
+
 
   <!-- Tabla de productos -->
   <table CLASS="table table-bordered mt-3">
@@ -138,8 +150,6 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 <footer id="footer" class="margenFooster">
     <div class="container text-center" >
       <p>
-        <a style="color:rgb(148, 160, 255);" href="#">Volver arriba</a>
-        &nbsp; &nbsp; <!--espaciado entre palabras-->
       </p>
       <p>
         <!--icon whatsapp-->
