@@ -31,7 +31,6 @@
 
 /* Estilo Index */
 .precio{
-    
   color: #000000;
   font-size: 30px;
 }
@@ -41,6 +40,14 @@
   font-weight: bolder;
 }
 
+.boton {
+  color: #fff;
+  border: none;
+  background-color: #4c56af;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* Estilo Nosotros */
 
@@ -95,6 +102,11 @@
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+
+.ordenFuente {
+  text-align: justify;
+  font-size: 20px;
 }
 
 /* Estilo detalle boleta */
@@ -166,10 +178,11 @@ button:hover {
 /* Estilos para tablas */
 
 table {
-  width: 100%;
+  width: 100%; 
   border-collapse: collapse;
   margin-top: 20px;
 }
+
 
 th, td {
   border: 1px solid #ddd;
@@ -200,34 +213,15 @@ a:hover {
   margin-top: 100px;
 }
 
-.margenProductos{
-  margin-left: 1000px;
-}
 
 /* Estilo API CONCURSO */
 
-h1 {
+.h1API {
   margin-top: 60px !important; 
   margin-bottom: 60px !important;
   text-align: center;
 }
 
-h2{
+.h2API {
   text-align: center;
-}
-
-/* Estilo para pagina Index*/
-.boton {
-  color: #fff;
-  border: none;
-  background-color: #4c56af;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Estilo para pagina Nosotros*/
-.ordenFuente {
-  text-align: justify;
-  font-size: 20px;
 }
