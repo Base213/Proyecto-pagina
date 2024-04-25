@@ -25,6 +25,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bolder;
 }
 
 input[type="text"],
@@ -37,16 +38,21 @@ input[type="tel"] {
   border-radius: 5px;
 }
 
-.boton[type="submit"],
-.boton[type="reset"] {
+.boton[type="submit"] {
   color: #fff;
   border: none;
   background-color: #4c5eaf;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  display: block; /* Hace que los botones ocupen todo el ancho */
-  margin-top: 10px; /* Espacio superior entre los botones */
+}
+.boton[type="reset"] {
+  color: #fff;
+  border: none;
+  background-color: #4c56af;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .logo {
