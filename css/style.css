@@ -244,5 +244,14 @@ a:hover {
   font-size: 60px;
 }
 
+.error{
+  color: red;
+  font-weight: bolder;
+}
+
+label {
+  font-weight: bolder;
+}
+
 
 

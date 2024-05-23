@@ -50,6 +50,13 @@ $(document).ready(function() {
       return this.optional(element) || !/\d/.test(value); // Comprueba si el valor contiene algún número
   }, "No se permiten números en este campo");
 
+    // El siguiente Javascript obliga a que la caja de texto del rut, siempre escriba la letra "K" en mayúscula
+    if (document.getElementById('rut')) {
+        document.getElementById('rut').addEventListener('keyup', function(e) {
+            e.target.value = e.target.value.toUpperCase();
+        });
+    }
+
   // Validación del formulario
   $("#formulario").validate({
       // Reglas de validación para cada campo
@@ -106,13 +113,37 @@ $(document).ready(function() {
               equalTo: "Las contraseñas no coinciden"
           }
       },
-      // Elemento donde se mostrarán los mensajes de error
-      errorElement: "div",
-      // Colocación de los mensajes de error debajo de los campos correspondientes
-      errorPlacement: function(error, element) {
-          error.addClass("text-danger"); // Agregar clase para estilo de color rojo
-          error.insertAfter(element); // Insertar mensaje de error después del elemento correspondiente
-      }
   });
+
+  $("#formulario-bodega").validate({
+    // Reglas de validación para cada campo
+    rules: {
+        categoria: {
+            required: true,
+        },
+        nombre: {
+            required: true,
+        },
+        cantidad: {
+            required: true,
+            number: true,
+            min: 0,
+        },
+    },
+    // Mensajes de error personalizados para cada campo
+    messages: {
+        categoria: {
+            required: "La categoria es un campo obligatorio",
+        },
+        nombre: {
+            required: "El nombre es un campo obligatorio",
+        },
+        cantidad: {
+            required: "La cantidad es un campo obligatorio",
+            number: "El campo debe ser númerico",
+            min: "La cantidad debe ser mayor o igual que 0"
+        },
+    },
+    });
 
 });
